@@ -24,6 +24,13 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     });
 });
 
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+        navMenu.classList.remove('active');
+    }
+});
+
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -41,6 +48,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Counter animation
 function animateCounter(element) {
     const target = parseInt(element.getAttribute('data-target'));
+    if (!target) return;
+    
     const duration = 2000;
     const step = target / (duration / 16);
     let current = 0;
@@ -63,17 +72,21 @@ const observerOptions = {
 };
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
+    entries.forEach((entry, index) => {
         if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
+            setTimeout(() => {
+                entry.target.classList.add('visible');
+            }, index * 100);
             observer.unobserve(entry.target);
         }
     });
 }, observerOptions);
 
-// Observe elements
-document.querySelectorAll('.card').forEach(card => observer.observe(card));
-document.querySelectorAll('.tech-card').forEach(card => observer.observe(card));
+// Observe spec cards
+document.querySelectorAll('.spec-card').forEach(card => observer.observe(card));
+
+// Observe gallery items
+document.querySelectorAll('.gallery-item').forEach(item => observer.observe(item));
 
 // Animate hero stats when visible
 const statsObserver = new IntersectionObserver((entries) => {
@@ -110,4 +123,32 @@ window.addEventListener('scroll', () => {
     }
 });
 
-console.log('%c⚡ VOLT Electric Bikes', 'color: #ff0a16; font-size: 20px; font-weight: bold;');
+// Image lazy loading for better performance
+if ('IntersectionObserver' in window) {
+    const imageObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                    img.removeAttribute('data-src');
+                }
+                imageObserver.unobserve(img);
+            }
+        });
+    });
+    
+    document.querySelectorAll('img[data-src]').forEach(img => {
+        imageObserver.observe(img);
+    });
+}
+
+// Console signature
+console.log(
+    '%c⚡ TITAN E-BIKE',
+    'background: #ff0a16; color: white; font-size: 24px; font-weight: bold; padding: 10px 20px; border-radius: 5px;'
+);
+console.log(
+    '%cMovilidad urbana inteligente',
+    'color: #ff0a16; font-size: 14px; padding: 5px;'
+);

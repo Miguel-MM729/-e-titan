@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="VOLT - E-bikes premium de diseño exclusivo y tecnología avanzada">
-    <title>VOLT - Premium E-Bikes</title>
+    <meta name="description" content="TITAN - E-bike premium con diseño exclusivo y la mejor tecnología eléctrica">
+    <title>TITAN - Premium E-Bike</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +18,11 @@
         <div class="container">
             <div class="nav-content">
                 <a href="#home" class="logo">
-                    <span class="logo-text">VOLT</span>
-                    <span class="logo-sub">ELECTRIC</span>
+                    <span class="logo-text">TITAN</span>
+                    <span class="logo-sub">E-BIKE</span>
                 </a>
                 
-                <button class="menu-toggle" id="menuToggle">
+                <button class="menu-toggle" id="menuToggle" aria-label="Menú">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -30,9 +30,10 @@
                 
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#home">Inicio</a></li>
-                    <li><a href="#models">Modelos</a></li>
-                    <li><a href="#tech">Tecnología</a></li>
-                    <li><a href="#contact" class="nav-cta">Contacto</a></li>
+                    <li><a href="#bike">La Bike</a></li>
+                    <li><a href="#specs">Características</a></li>
+                    <li><a href="#gallery">Galería</a></li>
+                    <li><a href="https://wa.me/34697222354" class="nav-cta" target="_blank">Contactar</a></li>
                 </ul>
             </div>
         </div>
@@ -40,178 +41,259 @@
 
     <section class="hero" id="home">
         <div class="hero-bg">
-            <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=1920&q=80" alt="Background">
+            <img src="titan4.JPG" alt="TITAN E-Bike">
         </div>
         
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">COLECCIÓN 2026</div>
+                <div class="hero-badge">NUEVA GENERACIÓN</div>
                 <h1 class="hero-title">
-                    <span>POTENCIA</span>
-                    <span>ELÉCTRICA</span>
-                    <span class="accent">SIN LÍMITES</span>
+                    <span>MOVILIDAD</span>
+                    <span>URBANA</span>
+                    <span class="accent">INTELIGENTE</span>
                 </h1>
-                <p class="hero-text">La nueva era de la movilidad urbana con diseño exclusivo</p>
+                <p class="hero-text">La e-bike perfecta para conquistar la ciudad con estilo, potencia y tecnología</p>
                 
                 <div class="hero-btns">
-                    <a href="#models" class="btn btn-primary">Explorar</a>
-                    <a href="#tech" class="btn btn-secondary">Tecnología</a>
+                    <a href="https://wa.me/34697222354?text=Hola,%20quiero%20información%20sobre%20TITAN" class="btn btn-primary" target="_blank">
+                        <span>Consultar disponibilidad</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                    <a href="#bike" class="btn btn-secondary">Conocer más</a>
                 </div>
                 
                 <div class="hero-stats">
                     <div class="stat">
-                        <div class="stat-num" data-target="120">0</div>
-                        <div class="stat-label">KM</div>
+                        <div class="stat-num" data-target="30">0</div>
+                        <div class="stat-label">KM AUTONOMÍA</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-num" data-target="45">0</div>
-                        <div class="stat-label">KM/H</div>
+                        <div class="stat-num" data-target="25">0</div>
+                        <div class="stat-label">KM/H MÁXIMA</div>
                     </div>
                     <div class="stat">
-                        <div class="stat-num" data-target="750">0</div>
-                        <div class="stat-label">WATTS</div>
+                        <div class="stat-num">100</div>
+                        <div class="stat-label">% ELÉCTRICO</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="models" id="models">
+    <section class="bike" id="bike">
         <div class="container">
-            <div class="section-head">
-                <span class="label">MODELOS</span>
-                <h2>Elige tu estilo</h2>
-            </div>
-            
-            <div class="models-grid">
-                <article class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1571333250630-f0230c320b6d?w=800&q=80" alt="Urban">
-                        <span class="badge">POPULAR</span>
-                    </div>
-                    <div class="card-body">
-                        <h3>URBAN PRO</h3>
-                        <p>Perfecto para ciudad</p>
-                        <div class="specs">
-                            <span>100 km</span>
-                            <span>40 km/h</span>
-                            <span>18 kg</span>
-                        </div>
-                        <a href="#contact" class="card-btn">Ver más</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1618173834217-8709ce1c5b4d?w=800&q=80" alt="Sport">
-                        <span class="badge premium">PREMIUM</span>
-                    </div>
-                    <div class="card-body">
-                        <h3>SPORT X</h3>
-                        <p>Máximo rendimiento</p>
-                        <div class="specs">
-                            <span>120 km</span>
-                            <span>45 km/h</span>
-                            <span>20 kg</span>
-                        </div>
-                        <a href="#contact" class="card-btn">Ver más</a>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-img">
-                        <img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?w=800&q=80" alt="Mountain">
-                        <span class="badge new">NUEVO</span>
-                    </div>
-                    <div class="card-body">
-                        <h3>MOUNTAIN</h3>
-                        <p>Todo terreno</p>
-                        <div class="specs">
-                            <span>90 km</span>
-                            <span>50 km/h</span>
-                            <span>24 kg</span>
-                        </div>
-                        <a href="#contact" class="card-btn">Ver más</a>
-                    </div>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <section class="tech" id="tech">
-        <div class="container">
-            <div class="section-head">
-                <span class="label">TECNOLOGÍA</span>
-                <h2>Innovación total</h2>
-            </div>
-            
-            <div class="tech-grid">
-                <div class="tech-card">
-                    <div class="tech-icon">⚡</div>
-                    <h3>Motor Brushless</h3>
-                    <p>750W de potencia sin mantenimiento</p>
-                </div>
-
-                <div class="tech-card">
-                    <div class="tech-icon">🔋</div>
-                    <h3>Batería Samsung</h3>
-                    <p>Hasta 120 km de autonomía</p>
-                </div>
-
-                <div class="tech-card">
-                    <div class="tech-icon">📱</div>
-                    <h3>Display Smart</h3>
-                    <p>Control desde tu móvil</p>
-                </div>
-
-                <div class="tech-card">
-                    <div class="tech-icon">🛡️</div>
-                    <h3>Frenos Hidráulicos</h3>
-                    <p>Máxima seguridad</p>
-                </div>
-
-                <div class="tech-card">
-                    <div class="tech-icon">💎</div>
-                    <h3>Cuadro Aluminio</h3>
-                    <p>Ligero y resistente</p>
-                </div>
-
-                <div class="tech-card">
-                    <div class="tech-icon">🔧</div>
-                    <h3>Suspensión Pro</h3>
-                    <p>100mm de recorrido</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <span class="label">CONTACTO</span>
-                    <h2>¿Listo para VOLT?</h2>
-                    <p>Solicita una prueba gratuita</p>
+            <div class="bike-content">
+                <div class="bike-info">
+                    <span class="label">DISEÑO EXCLUSIVO</span>
+                    <h2>TITAN E-Bike</h2>
+                    <p class="lead">La perfecta combinación entre diseño urbano, tecnología eléctrica y rendimiento excepcional.</p>
                     
-                    <div class="contact-details">
-                        <div class="detail">
-                            <strong>📞 Teléfono</strong>
-                            <span>+34 600 000 000</span>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div>
+                                <h4>Motor eléctrico eficiente</h4>
+                                <p>Potencia constante para tus desplazamientos urbanos</p>
+                            </div>
                         </div>
-                        <div class="detail">
-                            <strong>✉️ Email</strong>
-                            <span>info@voltbikes.com</span>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">🔋</div>
+                            <div>
+                                <h4>Batería de larga duración</h4>
+                                <p>30 km de autonomía para tu día a día</p>
+                            </div>
                         </div>
-                        <div class="detail">
-                            <strong>📍 Showroom</strong>
-                            <span>Madrid, España</span>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">🚴</div>
+                            <div>
+                                <h4>Diseño ergonómico</h4>
+                                <p>Comodidad total en cada trayecto</p>
+                            </div>
                         </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">🛡️</div>
+                            <div>
+                                <h4>Sistema de frenado avanzado</h4>
+                                <p>Seguridad y control en todo momento</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/34697222354?text=Quiero%20más%20información%20sobre%20TITAN" class="btn btn-primary" target="_blank">
+                        <span>Solicitar información</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="bike-image">
+                    <img src="titan3.JPG" alt="TITAN E-Bike detalle" class="main-bike-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specs" id="specs">
+        <div class="container">
+            <div class="section-head">
+                <span class="label">ESPECIFICACIONES</span>
+                <h2>Tecnología y rendimiento</h2>
+                <p class="section-subtitle">Diseñada para cumplir con la normativa europea y ofrecerte la mejor experiencia</p>
+            </div>
+            
+            <div class="specs-grid">
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3>Motor Eléctrico</h3>
+                    <p>Sistema de propulsión eléctrica eficiente y silencioso, perfecto para la ciudad</p>
+                    <div class="spec-detail">
+                        <span class="spec-label">Velocidad máxima</span>
+                        <span class="spec-value">25 km/h</span>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="7" width="20" height="14" rx="2"/>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                        </svg>
+                    </div>
+                    <h3>Batería de Litio</h3>
+                    <p>Batería recargable de alto rendimiento con sistema de gestión inteligente</p>
+                    <div class="spec-detail">
+                        <span class="spec-label">Autonomía</span>
+                        <span class="spec-value">30 km</span>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 16v-4M12 8h.01"/>
+                        </svg>
+                    </div>
+                    <h3>Display Digital</h3>
+                    <p>Pantalla LCD que muestra velocidad, batería y distancia recorrida</p>
+                    <div class="spec-detail">
+                        <span class="spec-label">Control</span>
+                        <span class="spec-value">Información en tiempo real</span>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="11" width="18" height="11" rx="2"/>
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+                        </svg>
+                    </div>
+                    <h3>Sistema de Frenado</h3>
+                    <p>Frenos de disco para máxima seguridad y control en cualquier condición</p>
+                    <div class="spec-detail">
+                        <span class="spec-label">Tipo</span>
+                        <span class="spec-value">Frenos de disco</span>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                    <h3>Cuadro Robusto</h3>
+                    <p>Estructura de aluminio ligera y resistente, diseñada para durabilidad</p>
+                    <div class="spec-detail">
+                        <span class="spec-label">Material</span>
+                        <span class="spec-value">Aleación de aluminio</span>
+                    </div>
+                </div>
+
+                <div class="spec-card">
+                    <div class="spec-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3>Carga Rápida</h3>
+                    <p>Sistema de carga eficiente para que estés listo rápidamente</p>
+                    <div class="spec-detail">
+                        <span class="spec-label">Tiempo</span>
+                        <span class="spec-value">Carga completa en horas</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="specs-note">
+                <p><strong>Cumple con la normativa europea:</strong> Velocidad limitada a 25 km/h según la legislación vigente para bicicletas eléctricas de pedaleo asistido.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-head">
+                <span class="label">GALERÍA</span>
+                <h2>TITAN en acción</h2>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-scroll>
+                    <img src="titan1.JPG" alt="TITAN E-Bike vista principal">
+                    <div class="gallery-overlay">
+                        <span>Diseño premium</span>
                     </div>
                 </div>
                 
-                <div class="contact-img">
-                    <img src="https://images.unsplash.com/photo-1571333250630-f0230c320b6d?w=600&q=80" alt="Showroom">
+                <div class="gallery-item" data-scroll>
+                    <img src="titan2.JPG" alt="TITAN E-Bike manillar">
+                    <div class="gallery-overlay">
+                        <span>Control total</span>
+                    </div>
                 </div>
+                
+                <div class="gallery-item" data-scroll>
+                    <img src="titan3.JPG" alt="TITAN E-Bike perfil">
+                    <div class="gallery-overlay">
+                        <span>Estilo urbano</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-scroll>
+                    <img src="titan4.JPG" alt="TITAN E-Bike en uso">
+                    <div class="gallery-overlay">
+                        <span>Lista para rodar</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>¿Listo para tu TITAN?</h2>
+                <p>Contáctanos ahora y descubre cómo TITAN puede transformar tu movilidad urbana</p>
+                <a href="https://wa.me/34697222354?text=Hola,%20quiero%20información%20sobre%20TITAN%20E-Bike" class="btn btn-primary btn-large" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                    </svg>
+                    <span>Contactar por WhatsApp</span>
+                </a>
             </div>
         </div>
     </section>
@@ -221,22 +303,23 @@
             <div class="footer-content">
                 <div>
                     <div class="logo">
-                        <span class="logo-text">VOLT</span>
-                        <span class="logo-sub">ELECTRIC</span>
+                        <span class="logo-text">TITAN</span>
+                        <span class="logo-sub">E-BIKE</span>
                     </div>
-                    <p>Movilidad urbana desde 2024</p>
+                    <p>Movilidad urbana inteligente</p>
                 </div>
                 
                 <div class="footer-links">
                     <div>
                         <h4>Producto</h4>
-                        <a href="#models">Modelos</a>
-                        <a href="#tech">Tecnología</a>
+                        <a href="#bike">La Bike</a>
+                        <a href="#specs">Características</a>
+                        <a href="#gallery">Galería</a>
                     </div>
                     <div>
-                        <h4>Empresa</h4>
-                        <a href="#">Nosotros</a>
-                        <a href="#">Garantía</a>
+                        <h4>Contacto</h4>
+                        <a href="https://wa.me/34697222354" target="_blank">WhatsApp</a>
+                        <a href="tel:+34697222354">+34 697 222 354</a>
                     </div>
                     <div>
                         <h4>Legal</h4>
@@ -247,12 +330,12 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2026 VOLT. Todos los derechos reservados.</p>
+                <p>&copy; 2026 TITAN E-Bike. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/34600000000" class="whatsapp" target="_blank">
+    <a href="https://wa.me/34697222354?text=Hola,%20quiero%20información%20sobre%20TITAN" class="whatsapp" target="_blank" aria-label="WhatsApp">
         <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
         </svg>
